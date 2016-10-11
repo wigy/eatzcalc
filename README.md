@@ -13,8 +13,3 @@ This is a simple application to calculate nutritional values for the whole day.
 
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)

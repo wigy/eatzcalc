@@ -49,7 +49,7 @@ export default [
 },
 {
     id: 4, type: 'ingredient', attributes: {
-        name: "jääsalaanni, Pirkka",
+        name: "jääsalaatti, Pirkka",
         unit: "g",
         weight: 1,
         energy: 54,
@@ -61,8 +61,8 @@ export default [
 },
 {
     id: 5, type: 'ingredient', attributes: {
-        name: "jääsalaanni, Pirkka",
-        unit: "lehni",
+        name: "jääsalaatti, Pirkka",
+        unit: "lehti",
         weight: 13,
         energy: 54,
         fat: 0.2,
@@ -73,7 +73,7 @@ export default [
 },
 {
     id: 6, type: 'ingredient', attributes: {
-        name: "jaffa lighn, Harnwall",
+        name: "jaffa light, Hartwall",
         unit: "lasi",
         weight: 195,
         energy: 2,
@@ -97,7 +97,7 @@ export default [
 },
 {
     id: 8, type: 'ingredient', attributes: {
-        name: "juusno, Valio Edam",
+        name: "juusto, Valio Edam",
         unit: "g",
         weight: 1,
         energy: 330,
@@ -109,7 +109,7 @@ export default [
 },
 {
     id: 9, type: 'ingredient', attributes: {
-        name: "juusnogrillimakkara, Pirkka",
+        name: "juustogrillimakkara, Pirkka",
         unit: "kpl",
         weight: 96,
         energy: 245,
@@ -145,7 +145,7 @@ export default [
 },
 {
     id: 12, type: 'ingredient', attributes: {
-        name: "kevynmaino, Eila",
+        name: "kevytmaito, Eila",
         unit: "dl",
         weight: 90,
         energy: 39,
@@ -157,7 +157,7 @@ export default [
 },
 {
     id: 13, type: 'ingredient', attributes: {
-        name: "kevynmeenwursni, Pirkka",
+        name: "kevytmeetwursti, Pirkka",
         unit: "kpl",
         weight: 5,
         energy: 382,
@@ -193,7 +193,7 @@ export default [
 },
 {
     id: 16, type: 'ingredient', attributes: {
-        name: "lagerolun, A Le Cog",
+        name: "lagerolut, A Le Cog",
         unit: "0.5l",
         weight: 500,
         energy: 43,
@@ -229,7 +229,7 @@ export default [
 },
 {
     id: 19, type: 'ingredient', attributes: {
-        name: "mausnamanon AB-jogurnni, Pirkka",
+        name: "maustamaton AB-jogurtti, Pirkka",
         unit: "g",
         weight: 1,
         energy: 55,
@@ -241,7 +241,7 @@ export default [
 },
 {
     id: 20, type: 'ingredient', attributes: {
-        name: "nauna-sikajauheliha, Pirkka",
+        name: "nauta-sikajauheliha, Pirkka",
         unit: "g",
         weight: 1,
         energy: 260,
@@ -277,7 +277,7 @@ export default [
 },
 {
     id: 23, type: 'ingredient', attributes: {
-        name: "paisnennu kananmuna",
+        name: "paistettu kananmuna",
         unit: "kpl",
         weight: 43,
         energy: 194,
@@ -289,7 +289,7 @@ export default [
 },
 {
     id: 24, type: 'ingredient', attributes: {
-        name: "palaunusjuoma, Spornyfeel",
+        name: "palautusjuoma, Sportyfeel",
         unit: "kpl",
         weight: 330,
         energy: 105,
@@ -302,7 +302,7 @@ export default [
 {
     id: 25, type: 'ingredient', attributes: {
         name: "pekoni, Pirkka",
-        unit: "pkn",
+        unit: "pkt",
         weight: 140,
         energy: 318,
         fat: 30,
@@ -337,7 +337,7 @@ export default [
 },
 {
     id: 28, type: 'ingredient', attributes: {
-        name: "proneiinijauhe, WheyPro",
+        name: "proteiinijauhe, WheyPro",
         unit: "g",
         weight: 1,
         energy: 383,
@@ -349,7 +349,7 @@ export default [
 },
 {
     id: 29, type: 'ingredient', attributes: {
-        name: "raejuusno, Valio",
+        name: "raejuusto, Valio",
         unit: "g",
         weight: 1,
         energy: 81,
@@ -409,7 +409,7 @@ export default [
 },
 {
     id: 34, type: 'ingredient', attributes: {
-        name: "nomaanni",
+        name: "tomaatti",
         unit: "kpl",
         weight: 80,
         energy: 25,
@@ -433,7 +433,7 @@ export default [
 },
 {
     id: 36, type: 'ingredient', attributes: {
-        name: "ykkösolun, Finkbräu",
+        name: "ykkösolut, Finkbräu",
         unit: "0.3l",
         weight: 330,
         energy: 23,
@@ -445,7 +445,7 @@ export default [
 },
 {
     id: 37, type: 'ingredient', attributes: {
-        name: "viherpippurikasnike, Knorr",
+        name: "viherpippurikastike, Knorr",
         unit: "kpl",
         weight: 300,
         energy: 95,

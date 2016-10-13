@@ -7,7 +7,7 @@ export default Ember.Route.extend({
         ret.then((data) => {
            let N = data.get('length');
            for (let i = 0; i < N; i++) {
-               console.log(data.objectAt(i))
+               d(data.objectAt(i));
            }
         });
         return ret;

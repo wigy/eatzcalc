@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                 name: 'eatzcalc',
                 title: 'EatzCalc',
                 paths: {
-                    libs: 'app/lib/',
+                    libs: 'public/assets/js/',
                 },
                 external: ['ember', 'neat-dump'],
                 index: {

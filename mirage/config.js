@@ -1,4 +1,5 @@
-import INGREDIENTS from "./ingredients";
+import INGREDIENTS from "./data/ingredients";
+import RECIPES from "./data/recipes";
 export default function() {
 
     this.namespace = '/api';
@@ -18,6 +19,12 @@ export default function() {
     this.get('/ingredients', function() {
         return {
             data: INGREDIENTS
+        };
+    });
+
+    this.get('/recipes', function() {
+        return {
+            data: RECIPES
         };
     });
 }

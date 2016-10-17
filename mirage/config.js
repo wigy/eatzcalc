@@ -5,26 +5,24 @@ export default function() {
     this.namespace = '/api';
     this.logging = false;
 
-    this.get('/ingredients/:id', function(db, request) {
-        let hit = INGREDIENTS.filter(r => r.id == request.params.id);
-        d(request.params.id, INGREDIENTS.filter(r => r.id == request.params.id));
+    this.defineRoutes = function(url, DATA) {
 
-        if (hit.length) {
+        this.get(url, function() {
             return {
-                data: hit[0]
+                data: DATA
             };
-        }
-    });
+        });
 
-    this.get('/ingredients', function() {
-        return {
-            data: INGREDIENTS
-        };
-    });
+        this.get(url + '/:id', function(db, request) {
+            let hit = DATA.filter(r => r.id == request.params.id);
+            if (hit.length) {
+                return {
+                    data: hit[0]
+                };
+            }
+        });
+    };
 
-    this.get('/recipes', function() {
-        return {
-            data: RECIPES
-        };
-    });
+    this.defineRoutes('/ingredients', INGREDIENTS);
+    this.defineRoutes('/recipes', RECIPES);
 }

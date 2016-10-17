@@ -1,6 +1,6 @@
 <h2>List of Ingredients</h2>
 <ul>
 {{#each model as |ingredient|}}
-    <li>{{ingredient.fullName}}</li>
+    <li>{{#link-to 'ingredient' ingredient}}{{ingredient.fullName}}{{/link-to}}</li>
 {{/each}}
 </ul>

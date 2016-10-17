@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('ingredients');
   this.route('ingredient', { path: '/ingredient/:id' });
   this.route('recipes');
+  this.route('recipe', { path: '/recipe/:id' });
 });
 
 export default Router;

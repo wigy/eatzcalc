@@ -188,7 +188,7 @@ export default [
     {
         id: 20, type: 'recipe', attributes: {
             name: "mansikkarahka",
-            description: "Punaviinilasillinen jaffaa.",
+            description: "Purkillinen mansikkarahkaa.",
             parts: [
                 1, "mansikkarahka, Valio Pro feel (kpl)",
             ]

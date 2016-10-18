@@ -1,17 +1,5 @@
 export default [
     {
-        id: 0, type: 'ingredient', attributes: {
-            name: "auringonkukkaöljy",
-            unit: "g",
-            weight: 1,
-            energy: 900,
-            fat: 100,
-            carbs: 0,
-            protein: 0,
-            price: 0
-        }
-    },
-    {
         id: 1, type: 'ingredient', attributes: {
             name: "banaani",
             unit: "kpl",
@@ -477,6 +465,18 @@ export default [
             carbs: 3.3,
             protein: 0.7,
             price: 0.2875000
+        }
+    },
+    {
+        id: 40, type: 'ingredient', attributes: {
+            name: "auringonkukkaöljy",
+            unit: "g",
+            weight: 1,
+            energy: 900,
+            fat: 100,
+            carbs: 0,
+            protein: 0,
+            price: 0
         }
     },
 ]

@@ -12,6 +12,9 @@ module.exports = function(grunt) {
                 paths: {
                     libs: 'public/assets/js/',
                 },
+                options: {
+                    ignore_dirs: ['node_modules', 'bower_components', 'tmp', 'dist'],
+                },
                 external: ['ember', 'neat-dump'],
                 index: {
                     app: 'app/index.html',

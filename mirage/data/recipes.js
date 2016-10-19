@@ -117,16 +117,6 @@ export default [
         }
     },
     {
-        id: 13, type: 'recipe', attributes: {
-            name: "katkarapunuudelit",
-            description: "Yksi pussi.",
-            parts: [
-                1, "nuudeli, katkarapu, Mama (pussi)",
-                1.2, "vesi (dl)",
-            ]
-        }
-    },
-    {
         id: 14, type: 'recipe', attributes: {
             name: "grillimakkara",
             description: "Yksi makkara sinapilla.",

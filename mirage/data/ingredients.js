@@ -373,7 +373,7 @@ export default [
     },
     {
         id: 32, type: 'ingredient', attributes: {
-            name: "jauheliha, sika-nauna",
+            name: "jauheliha, sika-nauta",
             unit: "g",
             weight: 1,
             energy: 266,

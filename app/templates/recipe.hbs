@@ -2,3 +2,8 @@
 <div>
 <i>{{model.description}}</i>
 </div>
+<ul>
+{{#each model.parts as |part|}}
+    <li>{{part.amount}} {{part.ingredient.unit}} {{part.ingredient.name}}</li>
+{{/each}}
+</ul>

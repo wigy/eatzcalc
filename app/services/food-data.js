@@ -46,6 +46,7 @@ export default Ember.Service.extend({
      * Find a recipe by its name or by its ID.
      */
     getRecipe(name) {
+
         return new RSVP.Promise((fulfill, reject) => {
 
                 if(Object.keys(this.recipesById).length) {
@@ -63,14 +64,19 @@ export default Ember.Service.extend({
                             this.recipesByName[obj.get('name')] = obj;
                             this.recipesById[obj.id] = obj;
                             let parts = obj.get('parts');
+                            let newParts = [];
                             for (let j = 1; j < parts.length; j += 2) {
                                 let ingredient = this.ingredientsByName[parts[j]];
                                 if (!ingredient) {
                                     reject("Cannot find ingredient: " + parts[j]);
                                 }
                                 parts[j] = ingredient;
+                                let mix = this.get('store').createRecord('mix');
+                                mix.set('amount', parts[j-1]);
+                                mix.set('ingredient', ingredient);
+                                newParts.push(mix);
                             }
-                            obj.set('parts', parts);
+                            obj.set('parts', newParts);
                         }
 
                         fulfill(this.recipesById[name] || this.recipesByName[name]);

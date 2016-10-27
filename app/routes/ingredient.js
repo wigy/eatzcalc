@@ -1,7 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-    model(params) {
-        return this.get('store').findRecord('ingredient', params.id)
+
+    foodData: Ember.inject.service(),
+
+    model({id}) {
+        return this.get('foodData').getIngredient(id);
     }
 });

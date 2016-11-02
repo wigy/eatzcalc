@@ -76,7 +76,7 @@ export default Ember.Service.extend({
                                 mix.set('ingredient', ingredient);
                                 newParts.push(mix);
                             }
-                            obj.set('parts', newParts);
+                            obj.set('parts', Ember.ArrayProxy.create({content: Ember.A(newParts)}));
                         }
 
                         fulfill(this.recipesById[name] || this.recipesByName[name]);

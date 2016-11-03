@@ -38,7 +38,7 @@ export default DS.Model.extend({
                 recipe: recipe
             });
             if (!this.get('parts')) {
-                this.set('parts', Ember.ArrayProxy.create({content: Ember.A([])}))
+                this.set('parts', Ember.ArrayProxy.create({content: Ember.A([])}));
             }
             this.get('parts').addObject(mealmix);
         });

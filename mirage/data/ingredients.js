@@ -479,4 +479,4 @@ export default [
             price: 0
         }
     },
-]
+];

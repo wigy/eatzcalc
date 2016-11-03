@@ -14,7 +14,7 @@ export default function() {
         });
 
         this.get(url + '/:id', function(db, request) {
-            let hit = DATA.filter(r => r.id == request.params.id);
+            let hit = DATA.filter(r => parseInt(r.id) === parseInt(request.params.id));
             if (hit.length) {
                 return {
                     data: hit[0]

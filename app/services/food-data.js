@@ -81,7 +81,7 @@ export default Ember.Service.extend({
 
                         fulfill(this.recipesById[name] || this.recipesByName[name]);
 
-                    }, (error) => reject(error))
+                    }, (error) => reject(error));
             }, (error) => reject(error));
         });
     }

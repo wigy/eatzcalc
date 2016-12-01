@@ -18,7 +18,7 @@ module.exports = function(grunt) {
                     app: 'app/index.html',
                 },
                 src: {
-                    code: '**/*.ts',
+                    code: 'app/**/*.ts',
                 },
             }
         },

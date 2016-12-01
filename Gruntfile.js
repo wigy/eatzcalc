@@ -10,28 +10,13 @@ module.exports = function(grunt) {
                 name: 'eatzcalc',
                 title: 'EatzCalc',
                 options: {
-                    ignore_dirs: ['node_modules', 'bower_components', 'tmp', 'dist'],
-                    libs: 'public/assets/js/',
                 },
-                external: ['ember', 'neat-dump'],
+                external: ['neat-dump', 'angular2'],
                 index: {
                     app: 'app/index.html',
-                    test: 'tests/index.html',
                 },
                 src: {
-                    config: 'config/*.js',
-                    code: 'app/**/*.js',
-                    otherjs: 'mirage/**/*.js',
-                    other: 'app/**/*',
-                },
-                media: {
-                    other: ['public/crossdomain.xml', 'public/robots.txt']
-                },
-                test: {
-                    unit: {
-                        tests: 'tests/unit/**/*.js',
-                        helpers: ['tests/test-helper.js', 'tests/helpers/**/*.js'],
-                    },
+                    code: '**/*.ts',
                 },
             }
         },

@@ -10,8 +10,10 @@ module.exports = function(grunt) {
                 name: 'eatzcalc',
                 title: 'EatzCalc',
                 options: {
+                    compile_typescript: true,
                 },
-                external: ['neat-dump', 'angular2'],
+//                external: ['neat-dump', 'angular2'],
+                external: ['neat-dump'],
                 index: {
                     app: 'app/index.html',
                 },
